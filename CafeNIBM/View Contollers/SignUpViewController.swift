@@ -10,7 +10,7 @@ import FirebaseAuth
 import Firebase
 
 class SignUpViewController: UIViewController {
-
+    
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var phoneNumber: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -21,21 +21,21 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
     @IBAction func registerTapped(_ sender: Any) {
         
         let error = validateFields()
@@ -52,11 +52,9 @@ class SignUpViewController: UIViewController {
                 if  err != nil {
                     self.showError("Error creating user")
                 }else {
-                    
-                    
                     let db = Firestore.firestore()
                     
-                    db.collection("users").addDocument(data: ["phonenumber":phoneNumber, "email":email, "uid": result!.user.uid]){
+                    db.collection("users").addDocument(data: ["phonenumber":phoneNumber, "email":email, "password":password, "uid": result!.user.uid]){
                         (error) in
                         
                         if error != nil {
@@ -70,7 +68,7 @@ class SignUpViewController: UIViewController {
     }
     
     func transitionToHome() {
-     let homeViewController =  storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        let homeViewController =  storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
         
         
         view.window?.rootViewController = homeViewController
@@ -93,5 +91,5 @@ class SignUpViewController: UIViewController {
         errlabel.alpha = 1
     }
     
-
+    
 }

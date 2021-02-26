@@ -26,8 +26,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="powerd by NIBM Computing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWM-tX-KaZ">
-                                <rect key="frame" x="85.5" y="838.5" width="243" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <rect key="frame" x="112.5" y="844.5" width="189.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
