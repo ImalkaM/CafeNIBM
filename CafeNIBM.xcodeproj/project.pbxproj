@@ -8,23 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		17DFEEA41ED5E15172B83A3F /* Pods_CafeNIBM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84F2D2B8EF0EE3B3BF49B2D /* Pods_CafeNIBM.framework */; };
+		AF082B0A25EFEF6000AF2DD5 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF082B0825EFEF6000AF2DD5 /* CartTableViewCell.swift */; };
+		AF082B0B25EFEF6000AF2DD5 /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF082B0925EFEF6000AF2DD5 /* CartTableViewCell.xib */; };
+		AF39A22525EB615E007CA3B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF39A22425EB615E007CA3B7 /* HomeViewController.swift */; };
+		AF39A22925EB64C2007CA3B7 /* FoodCart Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF39A22825EB64C2007CA3B7 /* FoodCart Model.swift */; };
+		AF39A25925EBE855007CA3B7 /* MainFoodGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF39A25825EBE855007CA3B7 /* MainFoodGrid.swift */; };
+		AF39A29A25ED4A42007CA3B7 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF39A29825ED4A42007CA3B7 /* FoodTableViewCell.swift */; };
+		AF39A29B25ED4A42007CA3B7 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF39A29925ED4A42007CA3B7 /* FoodTableViewCell.xib */; };
+		AF39A2BB25EF8E08007CA3B7 /* FoodDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF39A2BA25EF8E08007CA3B7 /* FoodDescriptionViewController.swift */; };
+		AF5E087B25E944340089C899 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E087A25E944340089C899 /* ForgetPasswordViewController.swift */; };
 		AF6B848425E8A45500175C95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF6B848325E8A45500175C95 /* GoogleService-Info.plist */; };
 		AF6B84A125E8B03200175C95 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B84A025E8B03200175C95 /* SignUpViewController.swift */; };
 		AF6B84A425E8B04000175C95 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B84A325E8B04000175C95 /* LogInViewController.swift */; };
 		AF6B84C825E8C7FC00175C95 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B84C725E8C7FC00175C95 /* Constants.swift */; };
 		AF9FC13525E876660096373D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FC13425E876660096373D /* AppDelegate.swift */; };
 		AF9FC13725E876660096373D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FC13625E876660096373D /* SceneDelegate.swift */; };
-		AF9FC13925E876660096373D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FC13825E876660096373D /* ViewController.swift */; };
 		AF9FC13C25E876660096373D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9FC13A25E876660096373D /* Main.storyboard */; };
 		AF9FC13E25E876670096373D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9FC13D25E876670096373D /* Assets.xcassets */; };
 		AF9FC14125E876670096373D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9FC13F25E876670096373D /* LaunchScreen.storyboard */; };
-		AF9FC15025E8779A0096373D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FC14F25E8779A0096373D /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B3674DDA99E067B981CDBC8 /* Pods-CafeNIBM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeNIBM.release.xcconfig"; path = "Target Support Files/Pods-CafeNIBM/Pods-CafeNIBM.release.xcconfig"; sourceTree = "<group>"; };
 		7471CAC1221E9B4BB0C61CC8 /* Pods-CafeNIBM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeNIBM.debug.xcconfig"; path = "Target Support Files/Pods-CafeNIBM/Pods-CafeNIBM.debug.xcconfig"; sourceTree = "<group>"; };
 		A84F2D2B8EF0EE3B3BF49B2D /* Pods_CafeNIBM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeNIBM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF082B0825EFEF6000AF2DD5 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		AF082B0925EFEF6000AF2DD5 /* CartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTableViewCell.xib; sourceTree = "<group>"; };
+		AF39A22425EB615E007CA3B7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AF39A22825EB64C2007CA3B7 /* FoodCart Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodCart Model.swift"; sourceTree = "<group>"; };
+		AF39A25825EBE855007CA3B7 /* MainFoodGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFoodGrid.swift; sourceTree = "<group>"; };
+		AF39A29825ED4A42007CA3B7 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		AF39A29925ED4A42007CA3B7 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
+		AF39A2BA25EF8E08007CA3B7 /* FoodDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDescriptionViewController.swift; sourceTree = "<group>"; };
+		AF5E087A25E944340089C899 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		AF6B848325E8A45500175C95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF6B84A025E8B03200175C95 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AF6B84A325E8B04000175C95 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -32,12 +48,10 @@
 		AF9FC13125E876660096373D /* CafeNIBM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeNIBM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9FC13425E876660096373D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF9FC13625E876660096373D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF9FC13825E876660096373D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF9FC13B25E876660096373D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF9FC13D25E876670096373D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF9FC14025E876670096373D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF9FC14225E876670096373D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF9FC14F25E8779A0096373D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +83,34 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AF39A22725EB64A2007CA3B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF39A22825EB64C2007CA3B7 /* FoodCart Model.swift */,
+				AF39A25825EBE855007CA3B7 /* MainFoodGrid.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AF39A29125ED39A8007CA3B7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AF39A29825ED4A42007CA3B7 /* FoodTableViewCell.swift */,
+				AF39A29925ED4A42007CA3B7 /* FoodTableViewCell.xib */,
+				AF39A2BA25EF8E08007CA3B7 /* FoodDescriptionViewController.swift */,
+				AF082B0825EFEF6000AF2DD5 /* CartTableViewCell.swift */,
+				AF082B0925EFEF6000AF2DD5 /* CartTableViewCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AF39A29D25ED4FAE007CA3B7 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		AF6B84C625E8C7DE00175C95 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +140,8 @@
 		AF9FC13325E876660096373D /* CafeNIBM */ = {
 			isa = PBXGroup;
 			children = (
+				AF39A29D25ED4FAE007CA3B7 /* New Group */,
+				AF39A22725EB64A2007CA3B7 /* Models */,
 				AF6B84C625E8C7DE00175C95 /* Helpers */,
 				AF9FC15225E877CE0096373D /* View Contollers */,
 				AF9FC13425E876660096373D /* AppDelegate.swift */,
@@ -114,10 +158,11 @@
 		AF9FC15225E877CE0096373D /* View Contollers */ = {
 			isa = PBXGroup;
 			children = (
-				AF9FC13825E876660096373D /* ViewController.swift */,
-				AF9FC14F25E8779A0096373D /* HomeViewController.swift */,
+				AF39A29125ED39A8007CA3B7 /* Home */,
 				AF6B84A025E8B03200175C95 /* SignUpViewController.swift */,
 				AF6B84A325E8B04000175C95 /* LogInViewController.swift */,
+				AF39A22425EB615E007CA3B7 /* HomeViewController.swift */,
+				AF5E087A25E944340089C899 /* ForgetPasswordViewController.swift */,
 			);
 			path = "View Contollers";
 			sourceTree = "<group>";
@@ -183,6 +228,8 @@
 			files = (
 				AF9FC14125E876670096373D /* LaunchScreen.storyboard in Resources */,
 				AF6B848425E8A45500175C95 /* GoogleService-Info.plist in Resources */,
+				AF39A29B25ED4A42007CA3B7 /* FoodTableViewCell.xib in Resources */,
+				AF082B0B25EFEF6000AF2DD5 /* CartTableViewCell.xib in Resources */,
 				AF9FC13E25E876670096373D /* Assets.xcassets in Resources */,
 				AF9FC13C25E876660096373D /* Main.storyboard in Resources */,
 			);
@@ -237,12 +284,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF9FC13925E876660096373D /* ViewController.swift in Sources */,
 				AF9FC13525E876660096373D /* AppDelegate.swift in Sources */,
 				AF6B84A425E8B04000175C95 /* LogInViewController.swift in Sources */,
 				AF9FC13725E876660096373D /* SceneDelegate.swift in Sources */,
+				AF082B0A25EFEF6000AF2DD5 /* CartTableViewCell.swift in Sources */,
+				AF39A22925EB64C2007CA3B7 /* FoodCart Model.swift in Sources */,
+				AF39A22525EB615E007CA3B7 /* HomeViewController.swift in Sources */,
 				AF6B84C825E8C7FC00175C95 /* Constants.swift in Sources */,
-				AF9FC15025E8779A0096373D /* HomeViewController.swift in Sources */,
+				AF5E087B25E944340089C899 /* ForgetPasswordViewController.swift in Sources */,
+				AF39A29A25ED4A42007CA3B7 /* FoodTableViewCell.swift in Sources */,
+				AF39A2BB25EF8E08007CA3B7 /* FoodDescriptionViewController.swift in Sources */,
+				AF39A25925EBE855007CA3B7 /* MainFoodGrid.swift in Sources */,
 				AF6B84A125E8B03200175C95 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
