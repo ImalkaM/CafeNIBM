@@ -16,6 +16,7 @@ class FoodDescriptionViewController: UIViewController {
     @IBOutlet weak var des: UILabel!
     
     
+    @IBOutlet weak var btnOrder: UIButton!
     
     
     var selectedRow = 0
@@ -26,6 +27,9 @@ class FoodDescriptionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        btnOrder.layer.cornerRadius = 20;
+        
         self.navigationController?.isNavigationBarHidden = false
 //        foodName.text = foods.foodName
 //        descriptionLabel.text = foods.description
