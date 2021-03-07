@@ -8,10 +8,11 @@
 import Foundation
 
 struct FoodCart {
-    var id:Int
+    var id:String
     var foodName: String
     var qty: Int
-    var prize: Int
+    var price: Int
+    var finalPrice: Int 
     //var image: String
     
 }

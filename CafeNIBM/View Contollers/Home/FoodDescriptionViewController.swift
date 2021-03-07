@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class FoodDescriptionViewController: UIViewController {
 
@@ -34,7 +35,7 @@ class FoodDescriptionViewController: UIViewController {
         priceD.text = String(foodss[selectedRow].prize)
         des.text = foodss[selectedRow].description
         foodDImage.image = UIImage(named: foodss[selectedRow].image)
-        setCart.append(FoodCart(id: 1, foodName: "dd", qty: 23, prize: 234))
+        //setCart.append(FoodCart(id: selectedRow, foodName: foodss[selectedRow].foodName, qty: 1, prize: foodss[selectedRow].prize))
     }
     
     @IBAction func orderButton(_ sender: Any) {
@@ -42,23 +43,44 @@ class FoodDescriptionViewController: UIViewController {
         
         performSegue(withIdentifier: "toHomeVc", sender: nil)
         
-        let vc = HomeViewController(nibName: "CartTableViewCell", bundle: nil)
-       
-
-        navigationController?.popViewController(animated: true)
+        setCartData()
+        
+//        let vc = HomeViewController(nibName: "CartTableViewCell", bundle: nil)
+//
+//        vc.cartTable.reloadData()
+//
+//        navigationController?.pushViewController(HomeViewController, animated: true)
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    func setCartData() {
         
-        if segue.identifier == "toHomeVc" {
+        let fireStoreDB = Firestore.firestore()
+        
+        fireStoreDB.collection("cartTable").addDocument(data: [
+            "name": foodss[selectedRow].foodName,
+            "qty": 1,
+            "price": foodss[selectedRow].prize,
+            "finalPrice": foodss[selectedRow].prize,
             
-            let destinayionVC  = segue.destination as! HomeViewController
-            //destinayionVC.selectedRow = myIndex
-            destinayionVC.cartitemshome = setCart
+        ]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
         }
-        
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        
+//        if segue.identifier == "toHomeVc" {
+//            
+//            let destinayionVC  = segue.destination as! HomeViewController
+//            //destinayionVC.selectedRow = myIndex
+//        }
+//        
+//    }
     
 
 }

@@ -161,8 +161,8 @@
 				AF39A29125ED39A8007CA3B7 /* Home */,
 				AF6B84A025E8B03200175C95 /* SignUpViewController.swift */,
 				AF6B84A325E8B04000175C95 /* LogInViewController.swift */,
-				AF39A22425EB615E007CA3B7 /* HomeViewController.swift */,
 				AF5E087A25E944340089C899 /* ForgetPasswordViewController.swift */,
+				AF39A22425EB615E007CA3B7 /* HomeViewController.swift */,
 			);
 			path = "View Contollers";
 			sourceTree = "<group>";

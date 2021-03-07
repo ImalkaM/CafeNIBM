@@ -38,10 +38,10 @@ class LogInViewController: UIViewController {
                 self.errorLabel.text = err!.localizedDescription
                 self.errorLabel.alpha = 1
             }else{
-                let homeViewController =  self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+                self.performSegue(withIdentifier: "loginToHome", sender: nil)
                 
                 
-                self.view.window?.rootViewController = homeViewController
+                //self.view.window?.rootViewController = homeViewController
                 self.view.window?.makeKeyAndVisible()
             }
         }
